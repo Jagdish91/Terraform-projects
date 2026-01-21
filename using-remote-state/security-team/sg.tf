@@ -5,7 +5,7 @@ provider "aws" {
 data "terraform_remote_state" "eip" {
   backend = "s3"
   config = {
-    bucket = "terraform-demo-007-statefile"
+    bucket = "bucket-name"
     key = "networking.tfstate"
     region = "us-east-1"
   }
